@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SkinElasticMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: c265e7cf9e8bf8d46987f16adfc1d72a, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 766294d9c3dfb0c469b94ca732ce1147, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -90,6 +90,8 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DeformRadius: 0
+    - _DeformStrength: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -99,6 +101,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _NeedleState: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -117,9 +120,10 @@ Material:
     - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ImpactPoint: {r: -2.356335, g: 1.1088083, b: 1.0537221, a: 0}
-    - _ImpactPointIn: {r: -2.3581772, g: 1.0938681, b: 1.0545137, a: 0}
-    - _ImpactPointOut: {r: -2.3442774, g: 1.0713682, b: 1.0545137, a: 0}
+    - _ImpactPoint: {r: -2.3020606, g: 1.0662426, b: 1.0537221, a: 0}
+    - _ImpactPointIn: {r: -2.3020606, g: 1.0662426, b: 1.0437222, a: 0}
+    - _ImpactPointOut: {r: -2.3020606, g: 1.0662426, b: 1.0637221, a: 0}
+    - _NeedlePosition: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1521699080001417465
