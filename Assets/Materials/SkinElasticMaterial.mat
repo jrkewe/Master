@@ -120,9 +120,9 @@ Material:
     - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ImpactPoint: {r: -2.4056716, g: 1.0866358, b: 1.0532857, a: 0}
-    - _ImpactPointIn: {r: -2.4056716, g: 1.0866358, b: 1.0432857, a: 0}
-    - _ImpactPointOut: {r: -2.4056716, g: 1.0866358, b: 1.0632857, a: 0}
+    - _ImpactPoint: {r: -2.3555014, g: 1.0824258, b: 0.9983857, a: 0}
+    - _ImpactPointIn: {r: -2.3555014, g: 1.0824258, b: 0.98838574, a: 0}
+    - _ImpactPointOut: {r: -2.3555014, g: 1.0824258, b: 1.0083858, a: 0}
     - _NeedlePosition: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
