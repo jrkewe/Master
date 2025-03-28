@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinShader: {fileID: 4247085992375126230}
-  thisCollider: {fileID: 1647707528}
+  thisCollider: {fileID: 385661198}
   bottomTrigger: {fileID: 1647707528}
 --- !u!1 &469205775
 GameObject:
@@ -2517,8 +2517,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095290205}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.99927366, w: -0.03810926}
-  m_LocalPosition: {x: -2.3972, y: 1.0633, z: 1.0539}
+  m_LocalRotation: {x: -0, y: -0, z: 0.69517535, w: 0.7188403}
+  m_LocalPosition: {x: -2.3581, y: 1.1215, z: 0.8837}
   m_LocalScale: {x: 0.026429065, y: 0.0012318871, z: 0.0016164958}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2526,7 +2526,7 @@ Transform:
   - {fileID: 1048849019}
   - {fileID: 678726080}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 184.368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 88.082}
 --- !u!1 &1123391722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,7 +2973,7 @@ Light:
   m_Type: 3
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 2
   m_Range: 2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4045,7 +4045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3094464108352756500, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7930137
+      value: 0.622
       objectReference: {fileID: 0}
     - target: {fileID: 3094464108352756500, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       propertyPath: m_LocalRotation.w
