@@ -2,58 +2,49 @@ using UnityEngine;
 
 public class SkinShaderController : MonoBehaviour
 {
-    public Transform needleTransform;     // Obiekt igly
-    public Material skinMaterial;         // Jeden material dla wszystkiego
+    public Transform needleTransform;      // Obiekt igly
+    public Material skinMaterial;          // Material skory (jeden wspolny)
 
-    public float radius = 0.1f;           // Zasieg glownego wgniotu
-    public Transform entryPoint;
-    public Transform exitPoint;
-
-    public float deformationRadius = 0.1f;
+    public float radius = 0.1f;            // Promien glownej deformacji
+    public float deformationRadius = 0.1f; // Promien deformacji na wejsciu/wyjsciu
 
     public enum NeedleState { Inserting, Exiting }
     public NeedleState needleState = NeedleState.Inserting;
 
+    public Transform entryPoint;           // (Opcjonalnie) punkty referencyjne
+    public Transform exitPoint;
+
+    public float offset = 0.01f;           // Przesuniecie od czubka igly
 
     void Update()
     {
+        if (needleTransform == null || skinMaterial == null) return;
+
+        // Ustal kierunek igly
+        Vector3 needleDir = needleTransform.forward;
+
+        // Wyznacz pozycje czubka igly + wejscie/wyjscie
+        Vector3 needleTip = needleTransform.position;
+        Vector3 entry = needleTip - needleDir * offset;
+        Vector3 exit = needleTip + needleDir * offset;
+
+        // Debug: pokaz punkt deformacji (czubek igly)
+        Debug.DrawRay(needleTip, Vector3.up * 0.02f, Color.red);
+
+        // Automatyczne rozpoznanie kierunku - opcjonalnie
+        float dot = Vector3.Dot(needleDir, Vector3.up);
+        if (dot < 0f)
+            Debug.Log("Igla wbija sie od gory (Inserting)");
+        else
+            Debug.Log("Igla wychodzi od spodu (Exiting)");
+
+        // Przekazanie do shader'a
         skinMaterial.SetFloat("_NeedleState", needleState == NeedleState.Inserting ? 0f : 1f);
-
-
-
-        if (needleTransform != null && skinMaterial != null)
-        {
-            Vector3 needleDir = needleTransform.forward; // kierunek igly
-            Vector3 normal = Vector3.up; // zakladamy ze plane ma normalna do gory
-
-            float dot = Vector3.Dot(needleDir, normal);
-
-            if (dot < 0f)
-                Debug.Log("Igla wbija sie od gory (Inserting)");
-            else
-                //Debug.Log("Igla wychodzi od spodu (Exiting)");
-
-            // Mozesz nadal ustawiac needleState recznie w Inspectorze do testow
-
-            // To tylko wysylanie do shader'a
-            skinMaterial.SetFloat("_NeedleState", needleState == NeedleState.Inserting ? 0f : 1f);
-
-            ///////////////////////
-            Vector3 needleTip = needleTransform.position;
-
-            float offset = 0.01f; // dlugosc od wejscia do wyjscia (mozesz dopasowac)
-            Vector3 entry = needleTip - needleDir * offset;
-            Vector3 exit = needleTip + needleDir * offset;
-
-            // Przekazanie danych do shader'a
-            skinMaterial.SetVector("_ImpactPoint", needleTip);
-            skinMaterial.SetFloat("_Radius", radius);
-
-            skinMaterial.SetVector("_ImpactPointIn", entry);
-            skinMaterial.SetFloat("_RadiusIn", deformationRadius);
-
-            skinMaterial.SetVector("_ImpactPointOut", exit);
-            skinMaterial.SetFloat("_RadiusOut", deformationRadius);
-        }
+        skinMaterial.SetVector("_ImpactPoint", needleTip);
+        skinMaterial.SetFloat("_Radius", radius);
+        skinMaterial.SetVector("_ImpactPointIn", entry);
+        skinMaterial.SetFloat("_RadiusIn", deformationRadius);
+        skinMaterial.SetVector("_ImpactPointOut", exit);
+        skinMaterial.SetFloat("_RadiusOut", deformationRadius);
     }
 }
