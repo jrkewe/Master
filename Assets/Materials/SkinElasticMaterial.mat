@@ -101,7 +101,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NeedleState: 0
+    - _NeedleState: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -120,9 +120,9 @@ Material:
     - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ImpactPoint: {r: -2.3020606, g: 1.0662426, b: 1.0537221, a: 0}
-    - _ImpactPointIn: {r: -2.3020606, g: 1.0662426, b: 1.0437222, a: 0}
-    - _ImpactPointOut: {r: -2.3020606, g: 1.0662426, b: 1.0637221, a: 0}
+    - _ImpactPoint: {r: -2.3499796, g: 1.0752071, b: 1.0532857, a: 0}
+    - _ImpactPointIn: {r: 0, g: 0, b: 0, a: 0}
+    - _ImpactPointOut: {r: 0, g: 0, b: 0, a: 0}
     - _NeedlePosition: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

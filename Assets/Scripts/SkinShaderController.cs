@@ -31,7 +31,7 @@ public class SkinShaderController : MonoBehaviour
             if (dot < 0f)
                 Debug.Log("Igla wbija sie od gory (Inserting)");
             else
-                Debug.Log("Igla wychodzi od spodu (Exiting)");
+                //Debug.Log("Igla wychodzi od spodu (Exiting)");
 
             // Mozesz nadal ustawiac needleState recznie w Inspectorze do testow
 
