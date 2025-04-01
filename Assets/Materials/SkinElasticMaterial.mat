@@ -109,7 +109,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NeedleState: 0
+    - _NeedleState: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -125,12 +125,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 0.70440245, g: 0.46738648, b: 0.46738648, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ImpactPoint: {r: -2.3588114, g: 1.0845557, b: 0.9860857, a: 0}
-    - _ImpactPointIn: {r: -2.3584766, g: 1.0945501, b: 0.9860857, a: 0}
-    - _ImpactPointOut: {r: -2.359146, g: 1.0745614, b: 0.9860857, a: 0}
+    - _ImpactPoint: {r: -2.2120047, g: 1.1469196, b: 0.9860857, a: 0}
+    - _ImpactPointIn: {r: -2.2158916, g: 1.1377059, b: 0.9860857, a: 0}
+    - _ImpactPointOut: {r: -2.2081177, g: 1.1561333, b: 0.9860857, a: 0}
+    - _NeedleDirection: {r: 0, g: -0.000000063329935, b: 1.0000001, a: 0}
     - _NeedlePosition: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

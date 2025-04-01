@@ -8,6 +8,10 @@ TagManager:
   - EntryPoints
   - ExitPoint
   - Needle
+  - 0
+  - 1
+  - 2
+  - 3
   layers:
   - Default
   - TransparentFX
