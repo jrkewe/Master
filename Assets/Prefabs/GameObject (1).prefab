@@ -305,31 +305,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea514acebfdc7484ca2671453f3d2867, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8934462070518898423}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea514acebfdc7484ca2671453f3d2867, type: 3}
---- !u!1 &5874534928195183175 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ea514acebfdc7484ca2671453f3d2867, type: 3}
-  m_PrefabInstance: {fileID: 6721591338015383318}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8934462070518898423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5874534928195183175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7889c13ffe46f4f979fb757fe00d03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  needleTransform: {fileID: 0}
-  skinMaterial: {fileID: 2100000, guid: f27f66496e619434aac4fc98d17d3ec3, type: 2}
-  radius: 0.1
 --- !u!4 &6542985652521318653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ea514acebfdc7484ca2671453f3d2867, type: 3}

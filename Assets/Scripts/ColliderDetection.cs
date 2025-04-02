@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class ColliderDetection : MonoBehaviour
 {
-    public NewSkinShaderController newSkinShader;
+    public SkinShaderController skinShader;
 
     private void OnTriggerEnter(Collider other)
     {
         int needleHitState = int.Parse(gameObject.tag);
 
-        if (newSkinShader != null)
+        if (skinShader != null)
         {
-            newSkinShader.needleHitState = needleHitState;
+            skinShader.needleHitState = needleHitState;
         }
 
     }

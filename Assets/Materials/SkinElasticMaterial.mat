@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8587201920122158021
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -8,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SkinElasticMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 766294d9c3dfb0c469b94ca732ce1147, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: f06a38eeec178f2449d12aa57e30ce83, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -63,12 +76,8 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_1bb29665e0dc468799836353af4024c2_Texture_1_Texture2D:
+    - _SampleTexture2D_2c912c5a63fc44a5acc9fd81fd6ef316_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: b2e22b3d4cba8db48b4dc251f73c88af, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SkinNormalMap:
-        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -98,8 +107,6 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DeformRadius: 0
-    - _DeformStrength: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -109,12 +116,12 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NeedleState: 1
+    - _NeedleState: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Radius: 0.01
+    - _Radius: 0.0045
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -125,26 +132,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.70440245, g: 0.46738648, b: 0.46738648, a: 1}
+    - _BaseColor: {r: 0.8, g: 0.5647059, b: 0.5647059, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ImpactPoint: {r: -2.2120047, g: 1.1469196, b: 0.9860857, a: 0}
-    - _ImpactPointIn: {r: -2.2158916, g: 1.1377059, b: 0.9860857, a: 0}
-    - _ImpactPointOut: {r: -2.2081177, g: 1.1561333, b: 0.9860857, a: 0}
-    - _NeedleDirection: {r: 0, g: -0.000000063329935, b: 1.0000001, a: 0}
-    - _NeedlePosition: {r: 0, g: 0, b: 0, a: 0}
+    - _ImpactPoint: {r: -2.372301, g: 1.0833042, b: 0.9860857, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &1521699080001417465
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 7

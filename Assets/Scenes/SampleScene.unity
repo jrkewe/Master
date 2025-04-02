@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSkinShader: {fileID: 4247085992375126233}
+  skinShader: {fileID: 4247085992375126233}
 --- !u!1 &113768734
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSkinShader: {fileID: 4247085992375126233}
+  skinShader: {fileID: 4247085992375126233}
 --- !u!1 &166810729
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSkinShader: {fileID: 4247085992375126233}
+  skinShader: {fileID: 4247085992375126233}
 --- !u!1 &181969670
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSkinShader: {fileID: 4247085992375126233}
+  skinShader: {fileID: 4247085992375126233}
 --- !u!1 &385661195
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSkinShader: {fileID: 4247085992375126233}
+  skinShader: {fileID: 4247085992375126233}
 --- !u!1 &469205775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,7 +2434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSkinShader: {fileID: 4247085992375126233}
+  skinShader: {fileID: 4247085992375126233}
 --- !u!1 &977812169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,6 +2606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea735c3530f6ae44aabc75deaa2e30a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastHit: 
 --- !u!1 &1095290205
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,7 +3613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSkinShader: {fileID: 4247085992375126233}
+  skinShader: {fileID: 4247085992375126233}
 --- !u!1 &1326410894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3710,6 +3711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea735c3530f6ae44aabc75deaa2e30a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastHit: 
 --- !u!1 &1359661363
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,7 +4093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSkinShader: {fileID: 4247085992375126233}
+  skinShader: {fileID: 4247085992375126233}
 --- !u!1 &1740264915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4489,7 +4491,7 @@ PrefabInstance:
     - target: {fileID: 5370109435183973266, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9ac4c3f2983d07749beb7ea19775b31d, type: 2}
+      objectReference: {fileID: 2100000, guid: 25e55ff8e0e877045a819243bfe3253e, type: 2}
     - target: {fileID: 8934462070518898423, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       propertyPath: radius
       value: 0.01
@@ -4505,13 +4507,12 @@ PrefabInstance:
     - target: {fileID: 8934462070518898423, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       propertyPath: skinMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 25e55ff8e0e877045a819243bfe3253e, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8934462070518898423, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       propertyPath: needleTransform
       value: 
       objectReference: {fileID: 1336687861}
-    m_RemovedComponents:
-    - {fileID: 8934462070518898423, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6542985652521318653, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
@@ -4569,13 +4570,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 585911335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b2b4f6eec6c2048b243a902b1eca26, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a7889c13ffe46f4f979fb757fe00d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   needleTransform: {fileID: 1336687861}
   needleHitState: 0
-  skinMaterial: {fileID: 2100000, guid: 9ac4c3f2983d07749beb7ea19775b31d, type: 2}
-  radius: 0.005
+  skinMaterial: {fileID: 2100000, guid: 25e55ff8e0e877045a819243bfe3253e, type: 2}
+  radius: 0.0045
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
