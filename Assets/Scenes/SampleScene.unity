@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126230}
+  newSkinShader: {fileID: 4247085992375126233}
 --- !u!1 &113768734
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126230}
+  newSkinShader: {fileID: 4247085992375126233}
 --- !u!1 &166810729
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126230}
+  newSkinShader: {fileID: 4247085992375126233}
 --- !u!1 &181969670
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126230}
+  newSkinShader: {fileID: 4247085992375126233}
 --- !u!1 &385661195
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126230}
+  newSkinShader: {fileID: 4247085992375126233}
 --- !u!1 &469205775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1270,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &585911335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5874534928195183175, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
+  m_PrefabInstance: {fileID: 4247085992375126228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &661999485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3048092956135967567, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
@@ -2429,7 +2434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126230}
+  newSkinShader: {fileID: 4247085992375126233}
 --- !u!1 &977812169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,7 +2856,7 @@ Transform:
   m_GameObject: {fileID: 1095290205}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.69517535, w: 0.7188403}
-  m_LocalPosition: {x: -2.3706, y: 1.151, z: 0.9867}
+  m_LocalPosition: {x: -2.3712, y: 1.133, z: 0.9867}
   m_LocalScale: {x: 0.026429065, y: 0.0012318871, z: 0.0016164958}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3607,7 +3612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126230}
+  newSkinShader: {fileID: 4247085992375126233}
 --- !u!1 &1326410894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4086,7 +4091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126230}
+  newSkinShader: {fileID: 4247085992375126233}
 --- !u!1 &1740264915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4484,7 +4489,7 @@ PrefabInstance:
     - target: {fileID: 5370109435183973266, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 25e55ff8e0e877045a819243bfe3253e, type: 2}
+      objectReference: {fileID: 2100000, guid: 9ac4c3f2983d07749beb7ea19775b31d, type: 2}
     - target: {fileID: 8934462070518898423, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       propertyPath: radius
       value: 0.01
@@ -4505,7 +4510,8 @@ PrefabInstance:
       propertyPath: needleTransform
       value: 
       objectReference: {fileID: 1336687861}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8934462070518898423, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6542985652521318653, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
@@ -4533,6 +4539,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 113768735}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5874534928195183175, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4247085992375126233}
     - targetCorrespondingSourceObject: {fileID: 7756287171317785039, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1274851695}
@@ -4551,17 +4560,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6542985652521318653, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
   m_PrefabInstance: {fileID: 4247085992375126228}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4247085992375126230 stripped
+--- !u!114 &4247085992375126233
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8934462070518898423, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
-  m_PrefabInstance: {fileID: 4247085992375126228}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 585911335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7889c13ffe46f4f979fb757fe00d03, type: 3}
+  m_Script: {fileID: 11500000, guid: 16b2b4f6eec6c2048b243a902b1eca26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  needleTransform: {fileID: 1336687861}
+  needleHitState: 0
+  skinMaterial: {fileID: 2100000, guid: 9ac4c3f2983d07749beb7ea19775b31d, type: 2}
+  radius: 0.005
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
