@@ -328,10 +328,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 87996103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
+  m_Script: {fileID: 11500000, guid: a5cee503066aae9458d0ec35166b6f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126233}
+  skinDeformer: {fileID: 4247085992375126237}
 --- !u!1 &113768734
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,10 +395,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 113768734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
+  m_Script: {fileID: 11500000, guid: a5cee503066aae9458d0ec35166b6f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126233}
+  skinDeformer: {fileID: 4247085992375126237}
 --- !u!1 &166810729
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,10 +462,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 166810729}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
+  m_Script: {fileID: 11500000, guid: a5cee503066aae9458d0ec35166b6f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126233}
+  skinDeformer: {fileID: 4247085992375126237}
 --- !u!1 &181969670
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,10 +836,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 371647265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
+  m_Script: {fileID: 11500000, guid: a5cee503066aae9458d0ec35166b6f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126233}
+  skinDeformer: {fileID: 4247085992375126237}
 --- !u!1 &385661195
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,10 +903,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 385661195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
+  m_Script: {fileID: 11500000, guid: a5cee503066aae9458d0ec35166b6f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126233}
+  skinDeformer: {fileID: 4247085992375126237}
 --- !u!1 &469205775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,7 +1285,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3911831983491977921, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
   m_PrefabInstance: {fileID: 4247085992375126228}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &661999490
+--- !u!114 &661999494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1294,9 +1294,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 661999485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf918ad8be658f4da36bd208ba29ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: fdbbed70d7ccf6041baf1a6011767659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &678726079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2431,10 +2432,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 809981046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
+  m_Script: {fileID: 11500000, guid: a5cee503066aae9458d0ec35166b6f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126233}
+  skinDeformer: {fileID: 4247085992375126237}
 --- !u!1 &977812169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,7 +2607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea735c3530f6ae44aabc75deaa2e30a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastHit: 
 --- !u!1 &1095290205
 GameObject:
   m_ObjectHideFlags: 0
@@ -3535,7 +3535,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6139669186801874864, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
   m_PrefabInstance: {fileID: 4247085992375126228}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1274851695
+--- !u!114 &1274851696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3544,9 +3544,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1274851690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf918ad8be658f4da36bd208ba29ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: fdbbed70d7ccf6041baf1a6011767659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1278556637
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,10 +3611,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1278556637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
+  m_Script: {fileID: 11500000, guid: a5cee503066aae9458d0ec35166b6f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126233}
+  skinDeformer: {fileID: 4247085992375126237}
 --- !u!1 &1326410894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,7 +3712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea735c3530f6ae44aabc75deaa2e30a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastHit: 
 --- !u!1 &1359661363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,7 +3779,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4400614810083738861, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
   m_PrefabInstance: {fileID: 4247085992375126228}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1511795800
+--- !u!114 &1511795805
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3788,9 +3788,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1511795795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf918ad8be658f4da36bd208ba29ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: fdbbed70d7ccf6041baf1a6011767659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1523416175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4803118528487651453, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
@@ -4090,10 +4091,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1647707525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedea0a6bf336dd4cb8f614874e9046b, type: 3}
+  m_Script: {fileID: 11500000, guid: a5cee503066aae9458d0ec35166b6f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinShader: {fileID: 4247085992375126233}
+  skinDeformer: {fileID: 4247085992375126237}
 --- !u!1 &1740264915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,7 +4312,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1050651857046253718, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
   m_PrefabInstance: {fileID: 4247085992375126228}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2079898859
+--- !u!114 &2079898864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4320,9 +4321,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2079898854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf918ad8be658f4da36bd208ba29ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: fdbbed70d7ccf6041baf1a6011767659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &2109157307
 GameObject:
   m_ObjectHideFlags: 0
@@ -4543,18 +4545,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5874534928195183175, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4247085992375126233}
+    - targetCorrespondingSourceObject: {fileID: 5874534928195183175, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4247085992375126237}
     - targetCorrespondingSourceObject: {fileID: 7756287171317785039, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1274851695}
+      addedObject: {fileID: 1274851696}
     - targetCorrespondingSourceObject: {fileID: 3048092956135967567, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 661999490}
+      addedObject: {fileID: 661999494}
     - targetCorrespondingSourceObject: {fileID: 4400614810083738861, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1511795800}
+      addedObject: {fileID: 1511795805}
     - targetCorrespondingSourceObject: {fileID: 1050651857046253718, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2079898859}
+      addedObject: {fileID: 2079898864}
   m_SourcePrefab: {fileID: 100100000, guid: 010020d5de2bfc148b269a9e98cf856d, type: 3}
 --- !u!4 &4247085992375126229 stripped
 Transform:
@@ -4568,7 +4573,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585911335}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a7889c13ffe46f4f979fb757fe00d03, type: 3}
   m_Name: 
@@ -4577,6 +4582,23 @@ MonoBehaviour:
   needleHitState: 0
   skinMaterial: {fileID: 2100000, guid: 25e55ff8e0e877045a819243bfe3253e, type: 2}
   radius: 0.0045
+--- !u!114 &4247085992375126237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585911335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b4bcc6f706f544bb1ecf6277a598b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needleTransform: {fileID: 1336687861}
+  skinMaterial: {fileID: 2100000, guid: 25e55ff8e0e877045a819243bfe3253e, type: 2}
+  radius: 0.0045
+  offset: 0.003
+  needleHitState: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

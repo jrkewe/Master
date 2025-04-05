@@ -140,6 +140,9 @@
         },
         {
             "m_Id": "d1f7641e62a947308591bf04f76555f1"
+        },
+        {
+            "m_Id": "8d83bf58ef3b4921b449a1b00c156b55"
         }
     ],
     "m_GroupDatas": [],
@@ -208,6 +211,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "3244bf2aa5134f548e3dfee9b5c2dd02"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "25400a174dc6494285700859c91db8ea"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "8d83bf58ef3b4921b449a1b00c156b55"
                 },
                 "m_SlotId": 0
             }
@@ -294,20 +311,6 @@
                     "m_Id": "8ceb5667c9c340e3afb1e084f4f5a2ff"
                 },
                 "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "3244bf2aa5134f548e3dfee9b5c2dd02"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "1e949789f10e418d9e709dc841c80f21"
-                },
-                "m_SlotId": 0
             }
         },
         {
@@ -404,6 +407,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "260be871f50847aeb5798f08d40e8b84"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "8d83bf58ef3b4921b449a1b00c156b55"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "1e949789f10e418d9e709dc841c80f21"
                 },
                 "m_SlotId": 0
             }
@@ -1594,6 +1611,29 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "35f05791006c4babbcd488da17480c04",
+    "m_Id": 1,
+    "m_DisplayName": "_new",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_new",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "367cc01ad74b477792d32963fb903983",
     "m_Id": 0,
     "m_DisplayName": "Out",
@@ -2669,6 +2709,21 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "8698d7dce01040ba93c027b26794149c",
+    "m_Id": 0,
+    "m_DisplayName": "state",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "state",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "8753fae29ca24d3ca5644ba824ba5f18",
     "m_Id": 5,
     "m_DisplayName": "G",
@@ -2858,6 +2913,49 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.CustomFunctionNode",
+    "m_ObjectId": "8d83bf58ef3b4921b449a1b00c156b55",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "SelectNeedleDirection (Custom Function)",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1544.6666259765625,
+            "y": -872.0,
+            "width": 283.333251953125,
+            "height": 280.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "8698d7dce01040ba93c027b26794149c"
+        },
+        {
+            "m_Id": "35f05791006c4babbcd488da17480c04"
+        }
+    ],
+    "synonyms": [
+        "code",
+        "HLSL"
+    ],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SourceType": 0,
+    "m_FunctionName": "SelectNeedleDirection",
+    "m_FunctionSource": "b61df67c7f416e04ca2a931018a57a5f",
+    "m_FunctionBody": "Enter function body here..."
 }
 
 {
