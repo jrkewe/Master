@@ -76,9 +76,6 @@
             "m_Id": "1e949789f10e418d9e709dc841c80f21"
         },
         {
-            "m_Id": "3244bf2aa5134f548e3dfee9b5c2dd02"
-        },
-        {
             "m_Id": "25400a174dc6494285700859c91db8ea"
         },
         {
@@ -199,20 +196,6 @@
                     "m_Id": "1e949789f10e418d9e709dc841c80f21"
                 },
                 "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "25400a174dc6494285700859c91db8ea"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "3244bf2aa5134f548e3dfee9b5c2dd02"
-                },
-                "m_SlotId": 0
             }
         },
         {
@@ -785,16 +768,16 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "0db218e98189478ea3d43e520143d8db",
-    "m_Title": "Sila nacisku",
+    "m_Title": "Pressure force ",
     "m_Content": "",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
         "x": -2914.66650390625,
-        "y": -447.33331298828127,
+        "y": -448.0,
         "width": 200.0,
-        "height": 159.99998474121095
+        "height": 160.00001525878907
     },
     "m_Group": {
         "m_Id": ""
@@ -909,7 +892,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "1b4108c28491452dbe25e7fa1ee6d1a3",
-    "m_Title": "Najwieksza sila w srodku",
+    "m_Title": "The greatest strength is inside ",
     "m_Content": "",
     "m_TextSize": 0,
     "m_Theme": 0,
@@ -1156,7 +1139,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "25f53cb533044bfc9c421731c6bc2434",
-    "m_Title": "Wgniatanie w gore",
+    "m_Title": "Pressing Up ",
     "m_Content": "",
     "m_TextSize": 0,
     "m_Theme": 0,
@@ -1333,7 +1316,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "28b7a7de5fa0472b8cced5465a4f2767",
-    "m_Title": "Wgniatanie w prawo",
+    "m_Title": "Pressing to the right",
     "m_Content": "",
     "m_TextSize": 0,
     "m_Theme": 0,
@@ -1477,49 +1460,6 @@
 }
 
 {
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.CustomFunctionNode",
-    "m_ObjectId": "3244bf2aa5134f548e3dfee9b5c2dd02",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "SelectDirection (Custom Function)",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1572.6668701171875,
-            "y": -717.3334350585938,
-            "width": 209.33349609375,
-            "height": 248.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "5fdd59ef5e4e4f019e407df2ad1a4413"
-        },
-        {
-            "m_Id": "33943c900aa546a89c8b26b374c90164"
-        }
-    ],
-    "synonyms": [
-        "code",
-        "HLSL"
-    ],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_SourceType": 0,
-    "m_FunctionName": "SelectDirection",
-    "m_FunctionSource": "e5bb6e167905eb44fb7dcdb13a2ccaf2",
-    "m_FunctionBody": "Enter function body here..."
-}
-
-{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "326bf0e6d9dc4ee9b2753a7195b37c92",
@@ -1541,29 +1481,6 @@
         "z": 0.0,
         "w": 0.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
-    "m_ObjectId": "33943c900aa546a89c8b26b374c90164",
-    "m_Id": 1,
-    "m_DisplayName": "_new",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_new",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_Labels": []
 }
 
 {
@@ -2230,21 +2147,6 @@
         "y": 0.0,
         "z": 0.0
     },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "5fdd59ef5e4e4f019e407df2ad1a4413",
-    "m_Id": 0,
-    "m_DisplayName": "state",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "state",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
     "m_Labels": []
 }
 
@@ -2927,10 +2829,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1544.6666259765625,
-            "y": -872.0,
-            "width": 283.333251953125,
-            "height": 280.0
+            "x": -1572.6668701171875,
+            "y": -717.3334350585938,
+            "width": 283.3333740234375,
+            "height": 280.0000915527344
         }
     },
     "m_Slots": [
@@ -3115,7 +3017,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "98f5595b187749bfb046d6560bcde8b3",
-    "m_Title": "Wgniatanie w dol",
+    "m_Title": "Pressing Down ",
     "m_Content": "",
     "m_TextSize": 0,
     "m_Theme": 0,
@@ -3158,14 +3060,14 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "9f6a6b693fa64b5a9859b6e049746a91",
-    "m_Title": "Kierunek wgniatania",
+    "m_Title": "Direction of indentation ",
     "m_Content": "",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -1771.3333740234375,
-        "y": -834.0,
+        "x": -1732.666748046875,
+        "y": -837.3333740234375,
         "width": 200.0,
         "height": 100.0
     },
@@ -3216,8 +3118,8 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "9fdc14534c16424fbe21402ad91ef3e0",
-    "m_Title": "Zlagodzenie krawedzi",
-    "m_Content": "Sila nacisku przylozona proporcjonalnie w odleglosci miedzy Edge1 a Edge2",
+    "m_Title": "Softening the edges ",
+    "m_Content": "The force applied proportionally at the distance between Edge1 and Edge2\r\n",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
@@ -3808,7 +3710,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "d08362db30544dee9d7c3299e98f48ea",
-    "m_Title": "Wgniatanie w lewo",
+    "m_Title": "Pressing to the left ",
     "m_Content": "",
     "m_TextSize": 0,
     "m_Theme": 0,
@@ -4557,7 +4459,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"b2e22b3d4cba8db48b4dc251f73c88af\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"506007935cd52d241a4bde494c47783b\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_DefaultType": 3
