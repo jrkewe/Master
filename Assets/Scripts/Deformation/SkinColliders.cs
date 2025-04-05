@@ -1,4 +1,5 @@
 using UnityEngine;
+using Master.SkinShader;
 
 public class SkinColliders : MonoBehaviour
 {
