@@ -1,16 +1,15 @@
 using UnityEngine;
-using Master.SkinShader;
 
 public class SkinColliders : MonoBehaviour
 {
     [Header("Reference to skin deformation controller")]
-    [SerializeField] private SkinDeformer skinDeformer;
+    public Master.SkinShader.SkinDeformer skinDeformer;
 
     private void OnTriggerEnter(Collider other)
     {
         if (TryGetNeedleHitState(out int hitState))
         {
-            UpdateNeedleHitState(hitState);
+            SetHitState(hitState);
         }
         else
         {
@@ -23,7 +22,8 @@ public class SkinColliders : MonoBehaviour
         return int.TryParse(gameObject.tag, out state);
     }
 
-    private void UpdateNeedleHitState(int newState)
+    // Public for tests, same logic as used in OnTriggerEnter
+    public void SetHitState(int newState)
     {
         if (skinDeformer != null)
         {
@@ -32,7 +32,7 @@ public class SkinColliders : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("SkinColliders: Missing reference to SkinDeformationController.");
+            Debug.LogWarning("SkinColliders: Missing reference to SkinDeformer.");
         }
     }
 }

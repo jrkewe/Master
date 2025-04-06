@@ -37,39 +37,6 @@ public class SkinDeformerTests
         deformer.skinMaterial = testMaterial;
     }
 
-    [Test]
-    public void SkinDeformer_UpdatesNeedleStateCorrectly()
-    {
-        // Arrange
-        var skin = new GameObject("Skin");
-        var renderer = skin.AddComponent<MeshRenderer>();
-        var mat = new Material(Shader.Find("Standard"));
-        renderer.sharedMaterial = mat;
-
-        var deformer = skin.AddComponent<SkinDeformer>();
-
-        var needle = new GameObject("Needle").transform;
-        var dummyTracker = new GameObject("DummyTracker").AddComponent<DummyNeedleTracker>();
-        dummyTracker.NeedleTransform = needle;
-
-        deformer.GetType()
-            .GetField("needleTrackerSource", BindingFlags.NonPublic | BindingFlags.Instance)
-            ?.SetValue(deformer, dummyTracker);
-
-        deformer.radius = 0.1f;
-        deformer.offset = 0.01f;
-        deformer.needleHitState = 0;
-
-        // Needle points downward (Y-)
-        needle.forward = Vector3.down;
-
-        // Act
-        deformer.ApplyDeformation();
-
-        // Assert
-        Assert.AreEqual(0f, mat.GetFloat("_NeedleState"));
-    }
-
     [TearDown]
     public void TearDown()
     {
@@ -84,12 +51,38 @@ public class SkinDeformerTests
         dummyTracker.NeedleTransform.position = new Vector3(1f, 2f, 3f);
         dummyTracker.NeedleTransform.forward = Vector3.down;
 
+        // Manual injection for test context
+        typeof(SkinDeformer)
+            .GetField("needleTracker", BindingFlags.NonPublic | BindingFlags.Instance)
+            ?.SetValue(deformer, dummyTracker);
+
         deformer.needleHitState = 0;
         deformer.ApplyDeformation();
 
-        // Check if shader parameters are correctly set
         Assert.AreEqual(0.1f, testMaterial.GetFloat("_Radius"));
         Assert.AreEqual(new Vector4(1f, 2.01f, 3f, 0f), testMaterial.GetVector("_ImpactPoint"));
         Assert.AreEqual(0f, testMaterial.GetFloat("_NeedleState"));
+    }
+
+    [TestCase(0, 0f, -1f, 0f, 0f)] // Down
+    [TestCase(1, 0f, 1f, 0f, 1f)]  // Up
+    [TestCase(2, 1f, 0f, 0f, 2f)]  // Right
+    [TestCase(3, -1f, 0f, 0f, 3f)] // Left
+    public void SkinDeformer_SetsNeedleStateCorrectly(int state, float x, float y, float z, float expected)
+    {
+        // Set up direction and state
+        dummyTracker.NeedleTransform.forward = new Vector3(x, y, z).normalized;
+        deformer.needleHitState = state;
+
+        // Manual injection for test context
+        typeof(SkinDeformer)
+            .GetField("needleTracker", BindingFlags.NonPublic | BindingFlags.Instance)
+            ?.SetValue(deformer, dummyTracker);
+
+        // Act
+        deformer.ApplyDeformation();
+
+        // Assert
+        Assert.AreEqual(expected, testMaterial.GetFloat("_NeedleState"));
     }
 }
